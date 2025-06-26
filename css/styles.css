@@ -1,0 +1,226 @@
+/* || RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+/* || VARIABLES */
+/* CHANGE THE DATA BELOW AS NEEDED */
+:root {
+  /* FONTS */
+  --FF: "Montserrat", sans-serif;
+  --FF-ALT: "Fraunces", serif;
+  --FS: 1rem;
+
+  /* COLORS */
+  --BGCOLOR: hsl(32, 37%, 92%);
+  --BGCOLOR-CARD-CONTENT: #fff;
+  --BGCOLOR-CARD-CTA: hsl(158, 36%, 37%);
+  --BGCOLOR-CARD-CTA-HOVER: hsl(158, 42%, 18%);
+  --FONT-COLOR: #000;
+  --FONT-COLOR-CARD-TYPE: hsl(228, 12%, 48%);
+  --FONT-COLOR-CARD-DESCRIPTION: hsl(228, 12%, 48%);
+  --FONT-COLOR-CARD-PRICE: hsl(158, 36%, 37%);
+  --FONT-COLOR-CARD-PRICE-OLD: hsl(228, 12%, 48%);
+  --FONT-COLOR-CARD-CTA: #fff;
+  --BORDER-COLOR: #000;
+  --SHADOW-COLOR: rgba(0, 0, 0, 0.3);
+
+  /* BORDERS */
+  --BORDER: 1px solid var(--BORDER-COLOR);
+
+  /* SHADOWS */
+  --BOX-SHADOW: 0 0 5px var(--SHADOW-COLOR);
+}
+
+/* || MEDIA QUERY (DARK THEME) */
+/* CHANGE THE DATA BELOW AS NEEDED */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* COLORS */
+    --BGCOLOR: #121212;
+    --BGCOLOR-CARD-CONTENT: #1e1e1e;
+    --BGCOLOR-CARD-CTA: hsl(158, 36%, 30%);
+    --BGCOLOR-CARD-CTA-HOVER: hsl(158, 42%, 20%);
+    --FONT-COLOR: #f5f5f5;
+    --FONT-COLOR-CARD-TYPE: hsl(228, 8%, 70%);
+    --FONT-COLOR-CARD-DESCRIPTION: hsl(228, 8%, 75%);
+    --FONT-COLOR-CARD-PRICE: hsl(158, 36%, 60%);
+    --FONT-COLOR-CARD-PRICE-OLD: hsl(228, 8%, 50%);
+    --FONT-COLOR-CARD-CTA: #ffffff;
+    --BORDER-COLOR: #333;
+    --SHADOW-COLOR: rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* || UTILITY CLASSES */
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+/* || GENERAL STYLES */
+html {
+  font-size: var(--FS);
+  font-family: var(--FF);
+  background-color: var(--BGCOLOR);
+}
+
+body {
+  color: var(--FONT-COLOR);
+  min-height: 100vh;
+}
+
+/* || MAIN */
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__container {
+  padding: 1rem;
+}
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__content {
+  background-color: var(--BGCOLOR-CARD-CONTENT);
+  padding: 1.5rem;
+}
+
+.card__type {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: var(--FONT-COLOR-CARD-TYPE);
+  letter-spacing: 0.3rem;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.card__name {
+  font-family: var(--FF-ALT);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+
+.card__description {
+  color: var(--FONT-COLOR-CARD-DESCRIPTION);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.65;
+  margin-bottom: 1.5em;
+}
+
+.card__price {
+  font-family: var(--FF-ALT);
+  color: var(--FONT-COLOR-CARD-PRICE);
+  font-weight: 700;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.15rem;
+  margin-bottom: 1rem;
+}
+
+.card__price--old {
+  font-family: var(--FF);
+  color: var(--FONT-COLOR-CARD-PRICE-OLD);
+  text-decoration: line-through;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.card__cta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  padding: 1.1em 0;
+  font-weight: 700;
+  font-size: 0.875rem;
+  background-color: var(--BGCOLOR-CARD-CTA);
+  color: var(--FONT-COLOR-CARD-CTA);
+  user-select: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.card__cta:hover,
+.card__cta:focus-visible {
+  background-color: var(--BGCOLOR-CARD-CTA-HOVER);
+}
+
+/* || MEDIA QUERIES */
+@media screen and (min-width: 42.875rem) {
+  /* || MAIN */
+  .card {
+    flex-direction: row;
+    align-items: stretch;
+    max-width: 37.5rem;
+  }
+
+  .card__banner {
+    flex: 50%;
+  }
+
+  .card__content {
+    flex: 50%;
+    padding: 2rem;
+  }
+
+  .card__type {
+    margin-bottom: 1.5em;
+  }
+
+  .card__name {
+    margin-bottom: 0.8em;
+  }
+
+  .card__description {
+    margin-bottom: 1.75em;
+  }
+
+  .card__price {
+    margin-bottom: 1.85rem;
+  }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Product Preview Card</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Elmar Chavez" />
+    <meta name="description"
+        content="A responsive product preview card built with HTML and CSS. Created during my third month learning frontend development as part of a Frontend Mentor challenge." />
+    <link rel="icon" href="./img/favicon-32x32.png" type="image/png" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <meta property="og:site_name" content="CodingWithJiro" />
+    <meta property="og:title" content="Product Preview Card" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description"
+        content="A clean and responsive product preview card crafted using HTML and CSS. Built as part of a Frontend Mentor challenge during my third month of learning frontend development." />
+    <!-- ADD LINK -->
+    <meta property="og:url" content="" />
+    <!-- ADD LINK -->
+    <meta property="og:image" content="img/site-preview-meta_1200x630.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Product Preview Card" />
+    <meta name="twitter:description"
+        content="Responsive product preview card built with HTML and CSS. Made for a Frontend Mentor challenge during month 3 of my frontend dev journey." />
+    <!-- ADD LINK -->
+    <meta name="twitter:image" content="img/site-preview-meta_1200x630.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f2ebe3" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)" />
+</head>
+
+<body>
+    <a class="sr-only" href="#main">Skip to main content</a>
+
+    <main class="main" role="main">
+        <div class="main__container">
+            <section class="card" aria-labelledby="product">
+                <picture class="card__banner" role="img">
+                    <source media="(min-width: 42.875rem)" srcset="./img/image-product-desktop_600x900.jpg">
+
+                    <img src="./img/image-product-mobile_686x480.jpg" alt="A Gabrielle Chanel Paris perfume."
+                        class="card__product">
+                </picture>
+
+                <div class="card__content">
+                    <p class="card__type">
+                        Perfume
+                    </p>
+
+                    <h1 class="card__name" id="product">
+                        Gabrielle Essence Eau De Parfum
+                    </h1>
+
+                    <p class="card__description">
+                        A floral, solar and voluptuous interpretation composed by Olivier Polge,
+                        Perfumer-Creator for the House of CHANEL.
+                    </p>
+
+                    <p class="card__price">
+                        $149.99
+                        <span class="card__price--old">
+                            $169.99
+                        </span>
+                    </p>
+
+                    <button type="button" class="card__cta" aria-label="Add Gabrielle Essence Eau De Parfum to cart">
+                        <img src="./img/icon-cart_15x16.svg" alt="" width="15" height="16" aria-hidden="true">
+
+                        <span class="card__add">
+                            Add to Cart
+                        </span>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
