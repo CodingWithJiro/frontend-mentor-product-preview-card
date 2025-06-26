@@ -15,6 +15,7 @@
 ![Mobile First](https://img.shields.io/badge/Mobile--First-Design-orange?style=for-the-badge)
 ![Dark Mode](https://img.shields.io/badge/Dark--Mode-Available-111?style=for-the-badge&logo=halfbrickstudios&logoColor=white)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7b95adba-0f3c-420c-869c-29087cd5ac85/deploy-status)](https://product-preview-card-fm-jiro.netlify.app/)
 ![Status](https://img.shields.io/badge/status-complete-brightgreen)
 ![Learning Path](https://img.shields.io/badge/learning%20path-month%203-blue)
 
@@ -81,7 +82,7 @@ The project was built without access to a Figma file (premium feature), so the l
 
 ## 🌐 Live Demo
 
-Or you can check out the 👉 [live website here](LINK)
+Or you can check out the 👉 [live website here](https://product-preview-card-fm-jiro.netlify.app/)
 
 ---
 
@@ -92,10 +93,3 @@ Created by **Elmar Chavez**
 🗓️ Month/Year: **June 2025**
 
 📚 Journey: **3<sup>rd</sup>** month of learning _frontend web development_.
-
-<!--
-
-GITHUB TAGS:
-html css vscode git github netlify 3rd-month frontend-mentor project perfectpixel
-
--->
