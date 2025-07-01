@@ -18,6 +18,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7b95adba-0f3c-420c-869c-29087cd5ac85/deploy-status)](https://product-preview-card-fm-jiro.netlify.app/)
 ![Status](https://img.shields.io/badge/status-complete-brightgreen)
 ![Learning Path](https://img.shields.io/badge/learning%20path-month%203-blue)
+![Views](https://visitor-badge.laobi.icu/badge?page_id=CodingWithJiro.frontend-mentor-product-preview-card&left_text=repo%20views)
 
 ## ℹ️ A Product Preview Card for a Chanel Perfume
 
